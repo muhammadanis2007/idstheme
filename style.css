@@ -1,0 +1,763 @@
+@charset "utf-8";
+
+/*
+Theme Name: IDSTheme
+Theme URI: http://www.ideasdotsmart.com
+Author: Muhammad Anees
+Author URI:
+Description: AngularJS WP theme for IdeasDotSmart.com Muhammad Anees Portfolio
+Version: 1.0
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:700);
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+html,
+body,
+div,
+section,
+aside,
+header,
+hgroup,
+nav,
+menu,
+ul,
+ol,
+li,
+table,
+th,
+tr,
+td,
+tfoot,
+article,
+span,
+img,
+a,
+footer,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+legend,
+caption,
+tbody,
+canvas,
+details,
+figcaption,
+figure,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0px;
+    padding: 0px;
+    font-size-adjust: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Questrial', 'Montserrat Alternates', Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.70);
+}
+
+iframe,
+img,
+a {
+    border: 0px none;
+    text-decoration: none
+}
+
+ul,
+li {
+    list-style: none;
+    list-style-type: none
+}
+
+html,
+body {
+    background: #ecf0f1 url("images/ui-bg.jpg");
+    background-attachment: fixed;
+    color: #444;
+    font-family: 'Questrial', 'Lato', Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    box-shadow: inset 0px 0px 100px 50px rgba(50, 50, 50, 0.10);
+}
+
+.set-size {
+    font-size: 10em;
+}
+
+.charts-container:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+img,
+iframe,
+video,
+audio,
+object,
+embed {
+    width: 100%;
+    max-width: 100%;
+    display: block !important;
+}
+
+header,
+secton,
+article,
+aside,
+nav,
+menu,
+footer {
+    display: block;
+}
+
+a,
+a:hover,
+img {
+    text-decoration: none;
+    border: 0px none;
+}
+
+.lf {
+    float: left
+}
+
+.rf {
+    float: right
+}
+
+.clear-fix {
+    float: none;
+    display: block;
+    line-height: 1px;
+    break-after: always
+}
+
+.container {
+    background: url("images/ui-design.png") no-repeat 0 0 fixed;
+    background-size: 13%;
+    position: relative;
+    overflow: hidden;
+    min-width: 98%;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    height: auto;
+    display: block
+}
+
+.ids-branding {
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    padding: 0px;
+}
+
+.ids-branding h1 {
+    display: block;
+    margin: 0px auto;
+    padding: 10px 0;
+    max-width: 300px;
+    border: none;
+}
+
+.ids-branding h1 img {
+    width: 64px !important;
+    height: 64px !important;
+    margin: 0px auto
+}
+
+.ids-branding h1 span {
+    display: block;
+    font-size: 2.2vw;
+    padding: 5px 0;
+    text-transform: uppercase;
+    color: #7e7e7e;
+}
+
+.menu-main-menu-container {
+    background: rgba(55, 55, 55, 0.15);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    max-height: 9vh;
+    margin: 0px auto
+}
+
+.menu {
+    display: block;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 1.8vw;
+    margin: -1px;
+    border-left: 1px solid rgba(0, 0, 0, 0.20);
+    line-height: 9vh;
+    min-height: 9vh;
+}
+
+.menu>li:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.menu li a {
+    text-transform: uppercase;
+    display: block;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    padding: 0 10px;
+    text-align: center;
+    min-width: 9vw;
+    max-width: 12vw;
+    color: rgba(0, 0, 0, 0.3);
+    /*border-bottom: 2px solid #fff;*/
+}
+
+.menu li a:hover,
+.menu li a.active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.60);
+    color: rgba(255, 255, 255, 0.70);
+    display: block;
+    border-radius: 60px;
+    transform-style: flat;
+    transform: translateY(-150);
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 3vw;
+    line-height: 5vh;
+    border-bottom: 1px double rgba(0, 0, 0, 0.25);
+    display: block
+}
+
+h2 {
+    font-family: 'Montserrat Alternates';
+    font-size: 2vwh;
+    line-height: 4vh;
+    border-bottom: 1px double rgba(0, 0, 0, 0.25);
+    display: block
+}
+
+h3 {
+    font-size: 1.2vw;
+    line-height: 10vh;
+    border-bottom: 2px solid rgba(252, 152, 6, 1.0);
+    display: block;
+    margin: 2px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+p,
+span,
+div {
+    font-size: 1.0vw;
+    line-height: 4vh
+}
+
+.selected {
+    background-color: #FAFAD2;
+}
+
+.ids-container {
+    position: relative;
+    overflow: hidden;
+    min-width: 98%;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    height: auto;
+    position: relative;
+}
+
+.animate {
+    -webkit-transition: all 3.0s ease-in-out 0.2ms;
+    -moz-transition: all 3.0s ease-in-out 0.2ms;
+    -o-transition: all 3.0s ease-in-out 0.2ms;
+    transition: all 3.0s ease-in-out 0.2ms;
+    opacity: 1;
+    position: relative;
+}
+
+.ng-enter {
+    top: 400px;
+	-moz-transform:rotateX(90deg);
+	-webkit-transform:rotateX(90deg);
+	-ms-transform:rotateX(90deg);
+	transform: rotateX(90deg);
+    opacity: 0;
+}
+
+.ng-leave,
+.ng-enter.ng-enter-active {
+    top: 0;
+    opacity: 1;
+}
+
+.ng-leave.ng-leave-active {
+    top: -400px;
+    border-radius: 0;
+    -moz-transform:scale(0.0);
+	-webkit-transform:scale(0.0);
+	-ms-transform:scale(0.0);
+	transform: scale(0.0);
+}
+
+.page-wraper {
+    max-width: 74%;
+    margin: 0px auto;
+    box-sizing: border-box;
+    display: block
+}
+
+section.ng-scope {
+    box-sizing: border-box;
+    max-width: 23.5%;
+    margin: 20px 5px;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.20);
+    display: inline-table;
+    /*float: left;*/
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+section.ng-scope h3 {
+    color: rgba(8, 157, 138, 1.0);
+    /*text-shadow:0px 0px 1px rgba(20, 20, 20, 0.95);*/
+    text-align: center;
+    border-radius: 100%;
+    letter-spacing: 0.20em;
+    font-weight: 100;
+}
+
+section.ng-scope a {
+    margin: 0 auto;
+    width: 98%;
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    display: block;
+    overflow: hidden;
+}
+
+section.ng-scope img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+}
+
+section.ng-scope .paragraph {
+    white-space: normal;
+    text-align: left;
+    vertical-align: text-top;
+    line-height: 14px;
+    float: left;
+    padding: 5px 2px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+section.ng-scope .paragraph:after {
+    clear: both
+}
+
+.page-box,
+.page-boxp {
+    width: 70%;
+    margin: 20px auto
+}
+
+.page-boxp h1 {
+    padding: 10px;
+    color: rgba(8, 157, 138, 1.0);
+    border-bottom: 2px solid #fc8007;
+    border-radius: 100%;
+    text-align: center;
+    font-family: 'Montserrat Alternates';
+    font-weight: 500;
+}
+
+.page-boxp .paragraph {
+    padding: 10px 0;
+}
+
+.back-button,
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 1.0);
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+    position: fixed;
+    top: 30%;
+    right: 0px;
+    border: 1px solid #efefef;
+    width: 100px;
+    font-size: 20px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center
+}
+
+.back-button .orange-txt {
+    color: #fc8007;
+    font-weight: bold;
+    padding-right: 3px
+}
+
+.back-button .green-txt {
+    color: rgba(8, 157, 138, 1.0);
+}
+
+.back-button:hover .orange-txt {
+    color: rgba(8, 157, 138, 1.0);
+    font-weight: bold;
+    padding-right: 3px
+}
+
+.back-button:hover .green-txt {
+    color: #fc8007;
+}
+
+.page-box h3 {
+    font-family: 'Montserrat Alternates';
+    font-size: 2.5vw;
+    line-height: 21vh;
+    border-bottom: 2px solid #fc8007;
+    border-radius: 100%;
+    text-align: center;
+    font-weight: 500;
+    display: block;
+    margin: 5px 0;
+    text-transform: uppercase;
+    color: rgba(8, 157, 138, 1.0) !important;
+}
+
+.page-box .paragraph p {
+    white-space: normal;
+    text-align: left;
+    vertical-align: text-top !important;
+    float: left;
+    padding: 5px 2px;
+    color: rgba(0, 0, 0, 0.70);
+}
+
+section.ng-scope .cates {
+    padding: 2px 5px;
+    color: rgba(0, 0, 0, 0.70);
+    line-height: 10px;
+    font-size: 9px;
+    display: inline-block;
+    margin: 5px 1px;
+    background-color: rgba(255, 255, 255, 0.70);
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid rgba(8, 157, 138, 1.0);
+    border-bottom: 1px solid rgba(252, 157, 6, 1.0);
+    padding: 5px 0;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.10)
+}
+
+.me {
+    width: 200px;
+    margin: 90px auto;
+}
+
+.me p,
+.me h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.me p {
+    font-weight: 200;
+}
+
+.me span {
+    font-weight: bold;
+}
+
+.social {
+    position: fixed;
+    top: 70px;
+    left: 96%;
+    z-index: 999
+}
+
+.social ul {
+    padding: 0px;
+    -webkit-transform: translate(-40px, 0);
+    -moz-transform: translate(-40px, 0);
+    -ms-transform: translate(-40px, 0);
+    -o-transform: translate(-40px, 0);
+    transform: translate(-40px, 0);
+}
+
+.social ul li {
+    display: block;
+    margin: 15px;
+    background: rgba(255, 255, 250, 0.95);
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    -webkit-border-radius: 30px 0px 0px 30px;
+    -moz-border-radius: 30px 0px 0px 30px;
+    border-radius: 30px 0px 0px 30px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.social ul li:hover {
+    -webkit-transform: translate(-110px, 0);
+    -moz-transform: translate(-110px, 0);
+    -ms-transform: translate(-110px, 0);
+    -o-transform: translate(-110px, 0);
+    transform: translate(-110px, 0);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.social ul li:hover a {
+    color: #000;
+}
+
+.social ul li:hover i {
+    color: #fff;
+    background: rgba(0, 0, 0, 1.00);
+    border: 1px solid #000;
+    box-shadow: inset 1px 1px 5px 1px #666;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.social ul li i {
+    position: absolute;
+    left: -10px;
+    margin-top: -12px;
+    color: #000;
+    background: #fff;
+    border: 1px solid #efefef;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 48px;
+    line-height: 48px;
+    height: 48px;
+    font-size: 20px;
+    background: #ffffff;
+    /*box-shadow: inset 1px 1px 5px 1px #999;*/
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    text-align: center;
+}
+
+.btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+.tool-bar-filter {
+    max-width: 55%;
+    padding: 5px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.tool-bar-filter button {
+    font-family: 'Questrial', 'Montserrat Alternates' !important;
+    border: 0px none;
+    background: none;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    font-size: 1.1vw;
+    padding: 0 5px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.25);
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    line-height: 45px;
+    white-space: normal;
+    word-break: break-all;
+    height: 50px;
+    outline: 0 none;
+    margin: 5px 0;
+}
+
+.tool-bar-filter button:nth-child(1) {
+    background: rgba(252, 128, 7, 0.50);
+    border: 1px solid rgba(252, 120, 6, 0.50);
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.tool-bar-filter button:nth-child(2) {
+    background: rgba(0, 192, 167, 0.50);
+    border: 1px solid rgba(0, 150, 140, 0.50);
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.tool-bar-filter button:nth-child(3) {
+    background: rgba(50, 104, 98, 0.50);
+    border: 1px solid rgba(40, 100, 90, 0.50);
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.tool-bar-filter button:hover {
+    background: rgba(0, 0, 0, 0.30);
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.tool-bar-filter button.active {
+    -webkit-transition: all 2s ease-in;
+    -moz-transition: all 2s ease-in;
+    -o-transition: all 2s ease-in;
+    transition: all 2s ease-in;
+    opacity: 1;
+    position: relative;
+    background: rgba(0, 0, 0, 0.10);
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    color: rgba(255, 255, 255, 0.50);
+}
+
+@media only screen and (max-width: 1024px) {
+    section.ng-scope {
+        max-width: 18%;
+    }
+    section.ng-scope h3 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    section.ng-scope a {
+        max-height: 100px;
+        min-height: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 640px) {
+    .ids-branding h1 {
+        padding: 5px 0;
+    }
+    .ids-branding h1 img {
+        width: 48px !important;
+        height: 48px !important;
+        margin: 0px auto
+    }
+    .page-wraper {
+        max-width: 54%
+    }
+    section.ng-scope .cates {
+        display: none;
+    }
+    section.ng-scope h3 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .menu li {
+        border-left: none !important;
+        border-right: none !important;
+    }
+    .menu li a {
+        padding: 0 5px;
+    }
+    .tool-bar-filter button {
+        border-radius: 30px
+    }
+    section.ng-scope a {
+        max-height: 60px;
+        min-height: 50px;
+        height: auto;
+    }
+}

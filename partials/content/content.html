@@ -1,0 +1,9 @@
+<div ng-controller="topicCtrl as content">
+    <section class="page-box">
+        <h3>{{page.title}}</h3>
+
+        <div class="paragraph" ng-bind-html="htmlSafe(page.content)"></div>
+
+    </section>
+
+</div>

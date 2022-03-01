@@ -1,0 +1,29 @@
+<div ng-controller="mainController as main">
+    <div class="tool-bar-filter">
+        <button ng-model="design" ng-click="setFilter('UX/UI Designing', $event)" type="button">UX/UI Designing</button>
+        <button ng-model="design" ng-click="setFilter('Application Development', $event)" type="button">Application Development</button>
+        <button ng-model="design" ng-click="setFilter('UX/UI Development', $event)" type="button">UX/UI Development</button>
+
+
+    </div>
+    <div class="page-wraper">
+        <section class="animate" ng-repeat="post in allposts | filter:design">
+
+
+
+            <h3>{{post.title}}</h3>
+            <!--  <a href="http://localhost:8800/wp-ids/topics/{{post.slug}}">
+                <img src="{{post.thumbnail}}" alt="{{post.title}}" />
+            </a>-->
+            <a href="{{post.url}}"><img src="{{post.thumbnail_images.gallerysize.url}}" alt="{{post.title}}"></a>
+            <!--<div class="paragraph" >{{post.excerpt}} </div>-->
+            <span class="cates" ng-hide="post.categories[0].title == null">{{post.categories[0].title}}</span>
+            <span class="cates" ng-hide="post.categories[1].title == null">{{post.categories[1].title}}</span>
+            <span class="cates" ng-hide="post.categories[2].title == null">{{post.categories[2].title}}</span>
+
+        </section>
+
+    </div>
+
+
+</div>
